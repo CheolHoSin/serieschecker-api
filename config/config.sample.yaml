@@ -1,0 +1,19 @@
+app: &default_app
+  name: serieschecker-api
+  version: v1
+  host: localhost
+  port: 8424
+
+production:
+  app:
+    <<: *default_app
+    host: input production host
+    port: input production port
+
+development:
+  app:
+    <<: *default_app
+
+testing:
+  app:
+    <<: *default_app
