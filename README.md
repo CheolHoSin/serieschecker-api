@@ -43,11 +43,13 @@ NODE_ENV=testing npm run test
 NODE_ENV=testing npm run cover
 ```
 
-## Code Conventions
+## Code Convention
 
 Custom Javascript Covention based on [airbnb](https://github.com/airbnb/javascript).
 
-See `.eslintrc.yaml`
+See `.eslintrc.yaml`.
+
+And this project uses pre-push git hook with [husky](https://github.com/typicode/husky).
 
 ## License
 

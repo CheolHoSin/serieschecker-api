@@ -1,10 +1,10 @@
 {
   "name": "serieschecker-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "API Server for SeriesChecker",
   "main": "bin/www.js",
   "scripts": {
-    "eslint": "eslint index.js",
+    "eslint": "eslint index.js config/*.js constants/*.js ./controllers/**/*.js routes/**/*.js test/**/*.js",
     "test": "mocha ./test/**/*.spec.js --reporter mochawesome",
     "cover": "nyc --reporter=html --reporter=text-summary mocha ./test/**/*.spec.js",
     "start-dev": "nodemon --inspect ./bin/www",
