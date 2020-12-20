@@ -1,10 +1,10 @@
 {
   "name": "serieschecker-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "API Server for SeriesChecker",
   "main": "bin/www.js",
   "scripts": {
-    "eslint": "eslint index.js",
+    "eslint": "eslint index.js config/*.js constants/*.js ./controllers/**/*.js routes/**/*.js test/**/*.js",
     "test": "mocha ./test/**/*.spec.js --reporter mochawesome",
     "cover": "nyc --reporter=html --reporter=text-summary mocha ./test/**/*.spec.js",
     "start-dev": "nodemon --inspect ./bin/www",
@@ -27,6 +27,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.0.0",
+    "husky": "^4.3.6",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
     "nodemon": "^2.0.6",
